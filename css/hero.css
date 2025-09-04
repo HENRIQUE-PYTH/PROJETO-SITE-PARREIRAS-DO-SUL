@@ -1,0 +1,294 @@
+/* ================= HERO ================= */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background-color: #000000; /* fundo branco apenas do hero */
+    /* border-bottom: 3px solid #000; linha preta */
+}
+
+section {
+    background: transparent;
+}
+
+
+/* imagem de fundo atrás do texto, acima da borda */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background: url("../imagem.hero-frase.hero-nome/porao.vinhos.png") center/cover no-repeat; 
+    /* border-bottom: 3px solid #000; mantém a linha preta */
+}
+
+
+/* Efeito de fade/borrão no final da imagem */
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;         /* começa no final do hero */
+    left: 0;
+    width: 100%;
+    height: 354px;     /* altura do fade até o fundo animado */
+    background: linear-gradient(
+        to top,
+        rgba(14,12,12,1) 0%,  /* cor do fundo animado */
+        rgba(14,12,12,0) 100% /* transparente para "sumir" sobre a imagem */
+    );
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+
+
+
+
+
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../imagens/hero-bg.jpg") center/cover no-repeat;
+    z-index: -1;
+    filter: brightness(0.6);
+}
+
+.hero-content {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 90%;
+    padding: 0 20px;
+    opacity: 0;                
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.hero-content.visible {
+    opacity: 1;                
+    transform: translateY(0);  
+}
+
+
+
+
+
+
+/* Animação slide-up */
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .slide-up {
+    animation: slideUp 1s ease forwards;
+  }
+
+  /* ================== NOVO ================== */
+/* Animação de saída (some suavemente para cima) */
+@keyframes slideUpOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+}
+
+.slide-up-out {
+  animation: slideUpOut 0.8s ease forwards;
+}
+
+  
+  /* pequena diferença de delay para a frase */
+  .hero-frase.slide-up {
+    animation-delay: 1s;
+  }
+
+  .hero-frase.slide-up-out {
+    animation: slideUpOut 0.8s ease forwards;
+    animation-delay: 0.1s; /* ajusta esse valor conforme necessário */
+}
+
+
+/* ================= LOGO ================= */
+.hero-logo, .topbar-logo {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    display: flex;
+    gap: 2px;
+}
+
+.hero-logo span, .topbar-logo span {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hero-nome { 
+    font-size: 3.9rem; 
+    color: #ffffff; 
+    opacity: 1; 
+    transition: opacity 1s ease-in-out;
+}
+
+.hero-nome.hide{
+    opacity: 0;
+}
+
+.tarja-logo{
+    height: 50px;
+}
+
+.hero-logo.fade-out{
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut{
+    from {opacity: 0;}
+    to {opacity: 0;}
+}
+
+.topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3b1d0F;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.topbar-logo { 
+    font-size: 1.6rem; 
+    font-weight: 500; 
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    opacity: 0;               
+    transform: translateY(40px); 
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+
+.topbar-nome span {
+    opacity: 1;
+    display: inline-block;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.topbar-nome.scrolled span {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+body.scrolled .topbar-logo {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.hero-desenho {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 1s ease-in-out;
+}
+
+.hero.apareceu .hero-desenho {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/* ================= HERO RESPONSIVO ================= */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 2.2rem; }
+    .hero-content p { font-size: 1.2rem; }
+    .btn-hero { padding: 10px 25px; }
+}
+
+@media (max-width: 480px) {
+    .hero { min-height: 70vh; }
+    .hero-content h1 { font-size: 1.8rem; }
+    .hero-content p { font-size: 1rem; }
+    .btn-hero { padding: 8px 20px; }
+}
+
+.hero-ilustracao {
+    width: 250px;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 1.2s ease-in-out;
+  }
+  
+  .hero.apareceu .hero-ilustracao {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Logo imagem ao lado do texto */
+.hero-logo-img {
+    height: 60px;
+    width: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.hero-content.visible .hero-logo-img {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tarja logo imagem */
+.topbar-logo-img {
+    height: 40px;
+    width: auto;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+body.scrolled .topbar-logo-img {
+    height: 200px; /* aumenta ao scroll */
+    opacity: 1;
+    transform: translateY(0);
+}

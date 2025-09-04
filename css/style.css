@@ -1,0 +1,137 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif; /* nova fonte para o site inteiro */
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+
+
+
+
+/*
+body::before {
+    content: "";
+    position: fixed;
+    top: calc(100vh);
+    left: 0;
+    width: 100%;
+    height: calc(100% - 100vh);
+    background: linear-gradient(-45deg, #000000, #330066, #000000, #330066);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1;
+}
+*/
+
+.fundo-animado {
+    position: fixed; /* fica fixo e cobre todo o conteúdo abaixo */
+    top: 128px; /* ou a altura da linha que separa o hero (ajuste conforme necessário) */
+    left: 0;
+    width: 100%;
+    height: 100%; /* cobre toda a página */
+    background: linear-gradient(-45deg, #000000, #330066, #000000, #330066);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    z-index: -1; /* atrás de todo o conteúdo */
+}
+
+
+
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+section {
+    background: transparent;
+}
+
+/* ================= GOOGLE MAPS, BOTÕES E FOOTER ================= */
+.btn-mapa, form button, .btn-hero {
+    display: inline-block;
+    padding: 40px 62px;
+    background: linear-gradient(145deg, #800020, #a0002d);
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Cormorant Garamond', serif;
+    text-decoration: none;
+    border-radius: 45px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    font-size: 1.9rem; /* aumenta o tamanho do texto */
+    
+}
+
+.btn-mapa:hover, form button:hover, .btn-hero:hover {
+    background: linear-gradient(145deg, #a0002d, #800020);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 80px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+}
+
+
+/*----------LOCALIZAÇÃO-----------*/
+
+
+.localizacao {
+    text-align: center;       /* centraliza o título, parágrafo e botão */
+    padding: 40px 20px;       /* espaçamento interno */
+}
+
+.localizacao h2 {
+    margin-bottom: 97px;      /* espaço abaixo do título */
+    font-size: 3.9rem;          /* opcional: aumenta o tamanho do título */
+}
+
+.localizacao p {
+    margin-bottom: 96px;      /* espaço abaixo do parágrafo */
+    font-size: 2.9rem;        /* opcional: tamanho do texto */
+}
+
+.localizacao .btn-mapa {
+    display: inline-block;    /* garante que o botão fique centralizado */
+}
+
+
+/* ================= TARJA ================= */
+#topbar {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 128px;
+    background-color: #fff;
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+    z-index: 1000;
+    opacity: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex; justify-content: center; align-items: center; overflow: hidden;
+}
+
+body.scrolled #topbar {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.topbar-nome{
+    color: #000000;
+    z-index:1000;
+    position: relative ;
+    white-space: nowrap; /* mantém as palavras na mesma linha e respeita espaços */
+}
+
+.topbar-nome span:last-child {
+    text-transform: none; /* respeita maiúsculas e minúsculas do JS */
+}

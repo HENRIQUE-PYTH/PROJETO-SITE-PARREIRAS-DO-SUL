@@ -1,0 +1,36 @@
+/* ================= PROPRIETÁRIOS ================= */
+
+.proprietarios {
+    text-align: center; /* centraliza o título */
+    padding: 40px 20px; /* espaçamento */
+}
+
+.proprietarios h2 {
+    text-align: center;       /* centraliza o título */
+    margin-bottom: 87px;      /* distância entre o título e os cards */
+    font-size: 4rem;          /* opcional: aumenta o tamanho do título */
+}
+
+
+
+.cards-proprietarios {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 20px;
+    flex-wrap: wrap;
+}
+
+.cards-proprietarios .card {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 57px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.cards-proprietarios .card:hover { transform: translateY(-5px); }
+.cards-proprietarios .card img { width: 100%; border-radius: 50%; margin-bottom: 10px; }

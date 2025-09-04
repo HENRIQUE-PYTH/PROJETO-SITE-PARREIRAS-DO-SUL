@@ -1,0 +1,45 @@
+.contato {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contato form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid rgba(255,255,255,0.3);
+    outline: none;
+    font-size: 1rem;
+    transition: border 0.3s, box-shadow 0.3s;
+    background: rgba(0,0,0,0.3);
+    color: #fff;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    border-color: #800020;
+    box-shadow: 0 0 10px #800020;
+}
+
+.contato input::placeholder,
+.contato textarea::placeholder {
+    color: rgba(255,255,255,0.6);
+    font-style: italic;
+}
+
+.contato input:focus::placeholder,
+.contato textarea:focus::placeholder {
+    color: #dda0dd;
+    opacity: 0.5;
+}
