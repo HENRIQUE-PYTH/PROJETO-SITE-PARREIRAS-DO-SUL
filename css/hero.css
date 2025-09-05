@@ -238,17 +238,51 @@ body.scrolled .topbar-logo {
 
 /* ================= HERO RESPONSIVO ================= */
 @media (max-width: 768px) {
+    /* Hero */
     .hero-content h1 { font-size: 2.2rem; }
     .hero-content p { font-size: 1.2rem; }
     .btn-hero { padding: 10px 25px; }
+
+    /* Cards produtos e proprietários */
+    .cards-produtos, .cards-proprietarios {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .cards-produtos .card, .cards-proprietarios .card {
+        width: 45%;
+    }
+
+    /* Topbar e logo */
+    .topbar-logo-img {
+        height: 50px;
+    }
 }
 
 @media (max-width: 480px) {
+    /* Hero */
     .hero { min-height: 70vh; }
     .hero-content h1 { font-size: 1.8rem; }
     .hero-content p { font-size: 1rem; }
     .btn-hero { padding: 8px 20px; }
+
+    /* Cards produtos e proprietários */
+    .cards-produtos .card, .cards-proprietarios .card {
+        width: 100%;
+    }
+    .cards-produtos img, .cards-proprietarios img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Topbar e logo */
+    .topbar-logo-img {
+        height: 40px;
+    }
 }
+
 
 .hero-ilustracao {
     width: 250px;
