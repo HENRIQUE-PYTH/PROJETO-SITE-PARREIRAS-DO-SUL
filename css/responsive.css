@@ -1,14 +1,13 @@
 /* ================= MEDIA QUERIES ================= */
-@media (max-width: 768px) {
-    .cards-produtos .card, .cards-proprietarios .card { width: 100%; max-width: 300px; }
+ @media (max-width: 768px) {
+    .cards-produtos .card{ width: 100%; max-width: 300px; }
     .cards-produtos .card-text h3 { font-size: 1.3rem; }
     .cards-produtos .card-text p { font-size: 0.9rem; }
-    .cards-proprietarios .card h3 { font-size: 1.2rem; }
     .hero { min-height: 40vh; }
     body { font-size: 15px; }
 }
 
 @media (max-width: 480px) {
     .hero { min-height: 30vh; }
-    body { font-size: 14px; }
-}
+    body { font-size: 14px; } 
+} 

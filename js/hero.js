@@ -76,9 +76,6 @@ function transferirParaTarja() {
   spanDoSul.textContent = " do Sul"; // espaço incluído
   spanDoSul.style.fontFamily = "'Parisienne', cursive";
   spanDoSul.style.color = "#B8860B"; // interior dourado
-
-  //  spanDoSul.style.webkitTextStroke = "1pxrgb(182, 25, 25)"; // contorno 
-
   spanDoSul.style.display = "inline-block";
   spanDoSul.style.marginLeft = "10px"; // espaço entre palavras
   spanDoSul.style.fontSize = "67px";
@@ -93,16 +90,6 @@ function transferirParaTarja() {
 
 
 
-
-
-
-
-// console.log(">> Tentando escrever na tarja:", textoNome);
-// escreverTexto(topbarNome, textoNome, 100, () => {
-//   console.log(">> Texto final na tarja:", topbarNome.textContent);
-// });
-
-
 // Volta para o hero
 function voltarParaHero() {
   if (estado === 'hero') return;
@@ -110,6 +97,7 @@ function voltarParaHero() {
   topbarNome.textContent = '';
   mostrarHero();
 }
+
 
 // Inicia animação do hero ao carregar
 window.addEventListener('load', () => {
@@ -128,3 +116,4 @@ window.addEventListener('scroll', () => {
     document.body.classList.remove('scrolled');
   }
 });
+

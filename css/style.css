@@ -11,22 +11,6 @@ body {
 
 
 
-
-/*
-body::before {
-    content: "";
-    position: fixed;
-    top: calc(100vh);
-    left: 0;
-    width: 100%;
-    height: calc(100% - 100vh);
-    background: linear-gradient(-45deg, #000000, #330066, #000000, #330066);
-    background-size: 400% 400%;
-    animation: gradientAnimation 15s ease infinite;
-    z-index: -1;
-}
-*/
-
 .fundo-animado {
     position: fixed; /* fica fixo e cobre todo o conteúdo abaixo */
     top: 128px; /* ou a altura da linha que separa o hero (ajuste conforme necessário) */
@@ -48,9 +32,6 @@ body::before {
     100% { background-position: 0% 50%; }
 }
 
-section {
-    background: transparent;
-}
 
 /* ================= GOOGLE MAPS, BOTÕES E FOOTER ================= */
 .btn-mapa, form button, .btn-hero {
@@ -90,15 +71,33 @@ footer {
     padding: 40px 20px;       /* espaçamento interno */
 }
 
-.localizacao h2 {
-    margin-bottom: 97px;      /* espaço abaixo do título */
-    font-size: 3.9rem;          /* opcional: aumenta o tamanho do título */
+.localizacao h2,
+.contato h2 {
+    font-family: 'Gloock', serif;
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #f5f5f5;
+    letter-spacing: 1px;
+    text-transform: uppercase; /* dá um ar social */
 }
 
+
+
+/* Frases explicativas */
 .localizacao p {
-    margin-bottom: 96px;      /* espaço abaixo do parágrafo */
-    font-size: 2.9rem;        /* opcional: tamanho do texto */
+    font-family: 'Lora', serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #eaeaea;
 }
+
+/* Botão do Google Maps */
+.localizacao .btn-mapa {
+    font-family: 'Lora', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
 
 .localizacao .btn-mapa {
     display: inline-block;    /* garante que o botão fique centralizado */

@@ -20,7 +20,7 @@ const heroLogo = document.querySelector('.hero-logo-img');
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
         document.body.classList.add('scrolled');
-        transferirParaTarja();
+        
 
         // mostra logo imagem na tarja
         if (topbarLogo) topbarLogo.style.display = "inline-block";
