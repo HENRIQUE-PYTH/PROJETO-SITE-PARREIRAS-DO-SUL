@@ -35,9 +35,6 @@ function mostrarHero() {
 }
 
 
-
-
-
 // Transfere para tarja (com animação de saída)
 function transferirParaTarja() {
   if (estado === 'topbar') return;
@@ -71,9 +68,21 @@ function transferirParaTarja() {
 function voltarParaHero() {
   if (estado === 'hero') return;
   estado = 'hero';
-  topbarNome.textContent = '';
+
+  // Limpa texto e animações anteriores
+  heroNome.textContent = '';
+  heroFrase.textContent = '';
+  heroNome.classList.remove('slide-up', 'slide-up-out');
+  heroFrase.classList.remove('slide-up', 'slide-up-out');
+
+  // Força reflow para reiniciar animação
+  void heroNome.offsetWidth;
+  void heroFrase.offsetWidth;
+
+  // Mostra novamente com animação
   mostrarHero();
 }
+
 
 
 // Inicia animação do hero ao carregar
@@ -93,4 +102,3 @@ window.addEventListener('scroll', () => {
     document.body.classList.remove('scrolled');
   }
 });
-

@@ -86,13 +86,8 @@ section {
 
 .slide-up-out {
   animation: slideUpOut 0.8s ease forwards;
-}
+}  
 
-  
-  /* pequena diferença de delay para a frase */
-  .hero-frase.slide-up {
-    animation-delay: 1s;
-  }
 
   .hero-frase.slide-up-out {
     animation: slideUpOut 0.8s ease forwards;
@@ -244,16 +239,40 @@ section {
 .topbar-logo-icone {
     position: absolute;  /* tira do fluxo flex */
     right: -150px;         /* distância da borda direita */
-    height: 100px;        /* tamanho que você quiser */
+    height: 110px;        /* tamanho que você quiser */
     width: auto;
-    top: 50%;            /* centraliza verticalmente */
+    top: -0%;            /* centraliza verticalmente */
     transform: translateY(-50%); /* centraliza exato */
 }
 
+/* Entrada */
+.slide-up {
+    animation: slideUp 1s ease forwards;
+  }
+  
+  /* Saída */
+  .slide-up-out {
+    animation: slideUpOut 0.8s ease forwards;
+  }
+
+  .topbar-logo-img,
+  .topbar-logo-icone {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+  .topbar.apareceu .topbar-logo-img,
+  .topbar.apareceu .topbar-logo-icone {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
+
 
 body.scrolled .topbar-logo-principal {
-    height: 100px; /* aumenta ao scroll */
+    height: 110px; /* aumenta ao scroll */
     opacity: 1;
-    transform: translateY(12px);
+    transform: translateY(10px);
 }
   
