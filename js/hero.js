@@ -7,11 +7,7 @@ const heroFrase = document.querySelector('.hero-frase');
 const heroNome = document.querySelector('.hero-nome');
 
 const textoNome = "PARREIRAS DO SUL";
-const textoParreiras = "PARREIRAS";
-const textoDoSul = " do Sul";
 const textoFrase = "O sabor da tradição, direto das nossas vinícolas.";
-const letrasNome = textoNome.split('');
-
 let estado = 'hero';
 
 // Escreve letra por letra em um elemento
@@ -65,25 +61,6 @@ function transferirParaTarja() {
 
   topbarNome.textContent = '';
 
-  const spanParreiras = document.createElement('span');
-  spanParreiras.textContent = "PARREIRAS"; 
-  spanParreiras.style.fontFamily = "'Cinzel', serif";
-  spanParreiras.style.color = "#000";
-  spanParreiras.style.display = "inline-block";
-  spanParreiras.style.fontSize = "56px"; // aumenta o tamanho da palavra
-
-  const spanDoSul = document.createElement('span');
-  spanDoSul.textContent = " do Sul"; // espaço incluído
-  spanDoSul.style.fontFamily = "'Parisienne', cursive";
-  spanDoSul.style.color = "#B8860B"; // interior dourado
-  spanDoSul.style.display = "inline-block";
-  spanDoSul.style.marginLeft = "10px"; // espaço entre palavras
-  spanDoSul.style.fontSize = "67px";
-  spanDoSul.style.textTransform = "none"; // capitalização correta
-
-
-  topbarNome.appendChild(spanParreiras);
-  topbarNome.appendChild(spanDoSul);
 
   topbarNome.classList.add('slide-up');
 }

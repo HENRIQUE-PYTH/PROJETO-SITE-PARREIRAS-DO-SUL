@@ -19,7 +19,7 @@ whatsappForm.addEventListener("submit", function(e){
     const nome = document.getElementById("nome").value;
     const telefone = document.getElementById("telefone").value;
     const mensagem = document.getElementById("mensagem").value;
-    const numeroVincula = "5561996260227";
+    const numeroVincula = "5561986070359";
     const texto = `Olá, meu nome é ${nome}, meu telefone é ${telefone}. Mensagem: ${mensagem}`;
     const url = `https://wa.me/${numeroVincula}?text=${encodeURIComponent(texto)}`;
     window.open(url, "_blank");

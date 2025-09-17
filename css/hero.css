@@ -48,27 +48,10 @@ section {
 }
 
 
-
-.hero-content {
-    z-index: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    max-width: 90%;
-    padding: 0 20px;
-    opacity: 0;                
-    transform: translateY(20px); 
-    transition: opacity 1s ease, transform 1s ease;
-}
-
 .hero-content.visible {
     opacity: 1;                
     transform: translateY(0);  
 }
-
-
-
 
 
 
@@ -118,21 +101,7 @@ section {
 
 
 /* ================= LOGO ================= */
-.hero-logo, .topbar-logo {
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    line-height: 1.2;
-    display: flex;
-    gap: 2px;
-}
 
-.hero-logo span, .topbar-logo span {
-    display: inline-block;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-}
 
 .hero-nome { 
     font-size: 3.9rem; 
@@ -155,51 +124,20 @@ section {
     to {opacity: 0;}
 }
 
-.topbar{
+ .topbar{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #3b1d0F;
-    color: #ffffff;
+    background-color: #363434;
+    color: #463d3d;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
     z-index: 1000;
-}
-
-.topbar-logo { 
-    font-size: 1.6rem; 
-    font-weight: 500; 
-    color: #000000;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin: 0;
-    opacity: 0;               
-    transform: translateY(40px); 
-    transition: opacity 0.8s ease, transform 0.8s ease;
-}
-
-
-.topbar-nome span {
-    opacity: 1;
-    display: inline-block;
-    transform: translateY(20px);
-    transition: all 0.6s ease;
-}
-
-.topbar-nome.scrolled span {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-body.scrolled .topbar-logo {
-    opacity: 1;
-    transform: translateY(0);
-}
+} 
 
 
 .hero-desenho {
@@ -290,17 +228,32 @@ body.scrolled .topbar-logo {
     transform: translateY(0);
 }
 
-/* Tarja logo imagem */
-.topbar-logo-img {
-    height: 40px;
-    width: auto;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+
+.topbar-logo-container {
+    position: relative; /* necessário para posicionamento absoluto do ícone */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body.scrolled .topbar-logo-img {
-    height: 200px; /* aumenta ao scroll */
-    opacity: 1;
-    transform: translateY(0);
+.topbar-logo-principal {
+    height: 40px;
+    width: auto;
 }
+
+.topbar-logo-icone {
+    position: absolute;  /* tira do fluxo flex */
+    right: -150px;         /* distância da borda direita */
+    height: 100px;        /* tamanho que você quiser */
+    width: auto;
+    top: 50%;            /* centraliza verticalmente */
+    transform: translateY(-50%); /* centraliza exato */
+}
+
+
+body.scrolled .topbar-logo-principal {
+    height: 100px; /* aumenta ao scroll */
+    opacity: 1;
+    transform: translateY(12px);
+}
+  
