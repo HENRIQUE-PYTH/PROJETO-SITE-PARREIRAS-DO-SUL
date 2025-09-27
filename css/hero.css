@@ -232,8 +232,9 @@ section {
 }
 
 .topbar-logo-principal {
-    height: 40px;
+    height: 110px;   /* tamanho fixo */
     width: auto;
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .topbar-logo-icone {
