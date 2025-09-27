@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
             mostrarLogos();
         }
 
-        heroLogo.style.display = "none";
+        
     } else {
         document.body.classList.remove('scrolled');
 
@@ -72,8 +72,7 @@ window.addEventListener('scroll', () => {
             esconderLogos();
         }
 
-        heroLogo.style.display = "inline-block";
-        voltarParaHero();
+        
     }
 });
 

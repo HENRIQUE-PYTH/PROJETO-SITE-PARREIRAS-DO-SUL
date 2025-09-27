@@ -2,11 +2,11 @@
 // Animação Hero e Tarja
 // =======================
 
-const topbarNome = document.querySelector('.topbar-nome');
+// const topbarNome = document.querySelector('.topbar-nome');
 const heroFrase = document.querySelector('.hero-frase');
-const heroNome = document.querySelector('.hero-nome');
+// const heroNome = document.querySelector('.hero-nome');
 
-const textoNome = "PARREIRAS DO SUL";
+// const textoNome = "PARREIRAS DO SUL";
 const textoFrase = "O sabor da tradição, direto das nossas vinícolas.";
 let estado = 'hero';
 
@@ -23,13 +23,10 @@ function escreverTexto(elemento, texto, delay = 100, callback = null) {
 
 // Mostra no hero (nova versão com animação de baixo para cima)
 function mostrarHero() {
-  heroNome.textContent = textoNome;
   heroFrase.textContent = textoFrase;
 
   // adiciona classes de animação de entrada
-  heroNome.classList.add('slide-up');
   heroFrase.classList.add('slide-up');
-  heroNome.style.fontSize = "3rem"; 
   heroFrase.style.fontSize = "2rem";
 
 }
@@ -41,7 +38,6 @@ function transferirParaTarja() {
   estado = 'topbar';
 
   // Adiciona animação de saída
-  heroNome.classList.add('slide-up-out');
   heroFrase.classList.add('slide-up-out');
 
   // Remove texto e classe ao fim da animação
@@ -53,13 +49,9 @@ function transferirParaTarja() {
     });
   };
 
-  limparHero(heroNome);
+  // limparHero(heroNome);
   limparHero(heroFrase);
 
-  topbarNome.textContent = '';
-
-
-  topbarNome.classList.add('slide-up');
 }
 
 
@@ -70,13 +62,10 @@ function voltarParaHero() {
   estado = 'hero';
 
   // Limpa texto e animações anteriores
-  heroNome.textContent = '';
   heroFrase.textContent = '';
-  heroNome.classList.remove('slide-up', 'slide-up-out');
   heroFrase.classList.remove('slide-up', 'slide-up-out');
 
   // Força reflow para reiniciar animação
-  void heroNome.offsetWidth;
   void heroFrase.offsetWidth;
 
   // Mostra novamente com animação
