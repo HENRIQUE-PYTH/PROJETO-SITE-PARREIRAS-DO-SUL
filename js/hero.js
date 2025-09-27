@@ -2,11 +2,8 @@
 // Animação Hero e Tarja
 // =======================
 
-// const topbarNome = document.querySelector('.topbar-nome');
 const heroFrase = document.querySelector('.hero-frase');
-// const heroNome = document.querySelector('.hero-nome');
 
-// const textoNome = "PARREIRAS DO SUL";
 const textoFrase = "O sabor da tradição, direto das nossas vinícolas.";
 let estado = 'hero';
 
