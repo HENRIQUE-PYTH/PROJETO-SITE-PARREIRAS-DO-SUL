@@ -223,7 +223,7 @@ section {
 @media (max-width: 768px) {
     .topbar-logo-principal,
     .topbar-logo-icone {
-        height: 80px;  /* reduz um pouco */
+        height: 25px;  /* reduz um pouco */
     }
     .topbar-logo-icone {
         right: -100px; /* ajusta distância do lado direito */
