@@ -218,6 +218,31 @@ section {
     transform: translateY(-50%); /* centraliza exato */
 }
 
+
+/* ================= TARJA RESPONSIVO ================= */
+@media (max-width: 768px) {
+    .topbar-logo-principal,
+    .topbar-logo-icone {
+        height: 80px;  /* reduz um pouco */
+    }
+    .topbar-logo-icone {
+        right: -100px; /* ajusta distância do lado direito */
+    }
+}
+
+@media (max-width: 480px) {
+    .topbar-logo-principal,
+    .topbar-logo-icone {
+        height: 60px;  /* menor para celular */
+    }
+    .topbar-logo-icone {
+        right: -60px; /* ajusta a posição */
+    }
+}
+
+
+
+
 /* Entrada */
 .slide-up {
     animation: slideUp 1s ease forwards;
