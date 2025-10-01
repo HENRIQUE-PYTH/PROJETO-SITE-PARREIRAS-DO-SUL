@@ -132,49 +132,39 @@ section {
 
 
 /* ================= HERO RESPONSIVO ================= */
+/* ================= MEDIA QUERIES ATUALIZADAS ================= */
 @media (max-width: 768px) {
     /* Hero */
-    .hero-content p { font-size: 1.2rem; }
+    .hero-content p { font-size: 1.1rem; }
 
     /* Cards produtos */
-    .cards-produtos{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
-    .cards-produtos .card{
-        width: 45%;
-    }
+    .cards-produtos .card-text h3 { font-size: 1.2rem; }
+    .cards-produtos .card-text p { font-size: 0.9rem; }
 
-    /* Topbar e logo */
-    .topbar-logo-img {
-        height: 50px;
-    }
+    /* Botões */
+    .btn-mapa, form button, .btn-hero { font-size: 1.2rem; padding: 20px 30px; }
+
+    /* Outros títulos */
+    #outros-sucos h2 { font-size: 2rem; }
 }
 
 @media (max-width: 480px) {
     /* Hero */
-    .hero { min-height: 70vh; }
-    /* .hero-content h1 { font-size: 1.8rem; } */
-    .hero-content p { font-size: 1rem; }
-    /* .btn-hero { padding: 8px 20px; } */
+    .hero { min-height: 60vh; }
+    .hero-content p { font-size: 0.9rem; }
 
-    /* Cards produtos e proprietários */
-    .cards-produtos .card{
-        width: 100%;
-    }
-    .cards-produtos img{
-        max-width: 100%;
-        height: auto;
-        display: block;
-    }
+    /* Cards produtos */
+    .cards-produtos .card-text h3 { font-size: 1rem; }
+    .cards-produtos .card-text p { font-size: 0.8rem; }
+    .cards-produtos .card { width: 100%; }
 
-    /* Topbar e logo */
-    .topbar-logo-img {
-        height: 40px;
-    }
+    /* Botões */
+    .btn-mapa, form button, .btn-hero { font-size: 1rem; padding: 12px 20px; }
+
+    /* Outros títulos */
+    #outros-sucos h2 { font-size: 1.5rem; }
 }
+
 
 
 .hero-ilustracao {
