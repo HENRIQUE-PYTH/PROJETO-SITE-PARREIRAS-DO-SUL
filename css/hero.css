@@ -131,7 +131,6 @@ section {
 }
 
 
-/* ================= HERO RESPONSIVO ================= */
 /* ================= MEDIA QUERIES ATUALIZADAS ================= */
 @media (max-width: 768px) {
     /* Hero */
@@ -223,12 +222,18 @@ section {
 @media (max-width: 768px) {
     .topbar-logo-principal,
     .topbar-logo-icone {
-        height: 25px;  /* reduz um pouco */
+        height: 60px;  /* reduz um pouco */
     }
     .topbar-logo-icone {
         right: -100px; /* ajusta distância do lado direito */
     }
+
+    body.scrolled .topbar-logo-principal {
+        height: 60px; /* mantém o mesmo tamanho no scroll */
+        transform: translateY(5px); /* só anima a posição */
+      }
 }
+
 
 @media (max-width: 480px) {
     .topbar-logo-principal,
@@ -238,6 +243,11 @@ section {
     .topbar-logo-icone {
         right: -60px; /* ajusta a posição */
     }
+
+    body.scrolled .topbar-logo-principal {
+        height: 50px; /* igual no scroll */
+        transform: translateY(5px);
+      }
 }
 
 
@@ -269,7 +279,7 @@ section {
 
 
 body.scrolled .topbar-logo-principal {
-    height: 110px; /* aumenta ao scroll */
+    /* height: 110px; aumenta ao scroll */
     opacity: 1;
     transform: translateY(10px);
 }
