@@ -71,3 +71,31 @@ body.scrolled #topbar {
   transform: translateY(0);
   opacity: 1;
 }
+
+/* ================= OUTRA LINHA DE SUCOS ================= */
+#outros-sucos {
+  text-align: center;
+  margin: 80px auto;
+}
+
+#outros-sucos h2 {
+  font-family: 'Lora', serif;
+  font-size: 5.2rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.img-outros-sucos {
+  display: flex;
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center;     /* Centraliza na vertical (se tiver altura definida) */
+  width: 100%;
+}
+
+.img-outros-sucos img {
+  max-width: 90%; /* deixa uma margem lateral */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  display: block;
+}
