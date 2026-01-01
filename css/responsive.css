@@ -1,13 +1,78 @@
 /* ================= MEDIA QUERIES ================= */
- @media (max-width: 768px) {
-    .cards-produtos .card{ width: 100%; max-width: 300px; }
+
+/* Ajustes gerais para tablet */
+@media (max-width: 768px) {
+    /* Topbar / header */
+    #topbar { height: 90px; }
+    .fundo-animado { top: 90px; }
+    .topbar-logo-principal { height: 80px; }
+    .topbar-logo-icone { right: -60px; height: 70px; }
+
+    /* Produtos */
+    .cards-produtos { gap: 20px; padding: 120px 0; }
+    .cards-produtos .card{ width: 48%; max-width: 320px; }
     .cards-produtos .card-text h3 { font-size: 1.3rem; }
-    .cards-produtos .card-text p { font-size: 0.9rem; }
-    .hero { min-height: 40vh; }
+    .cards-produtos .card-text p { font-size: 0.95rem; }
+    .cards-produtos .card img { width: 120px; height: 120px; }
+    .produtos h2 { font-size: 2rem; margin: 40px 0; }
+
+    /* Hero */
+    .hero { min-height: 50vh; }
+    .hero-content p { font-size: 1.1rem; }
+
+    /* Botões e formulários */
+    .btn-mapa, form button, .btn-hero { font-size: 1.2rem; padding: 18px 28px; }
+    .contato form { max-width: 360px; padding: 0 10px; }
+
+    /* Geral */
     body { font-size: 15px; }
 }
 
+/* Ajustes para mobile (pequenas larguras) */
 @media (max-width: 480px) {
-    .hero { min-height: 30vh; }
-    body { font-size: 14px; } 
-} 
+    /* Topbar / header (mobile: totalmente desabilitado) */
+    #topbar {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        opacity: 0 !important;
+        position: static !important;
+        transform: none !important;
+        pointer-events: none !important;
+    }
+    .fundo-animado { top: 0 !important; }
+    .topbar-logo-principal { display: none !important; }
+    .topbar-logo-icone { display: none !important; }
+
+    /* Produtos */
+    .cards-produtos { gap: 12px; padding: 60px 0; }
+    .cards-produtos .card{ width: 100%; max-width: 360px; }
+    .cards-produtos .card img { width: 100px; height: 100px; }
+    .cards-produtos .card-text h3 { font-size: 1.1rem; margin-bottom: 12px; }
+    .cards-produtos .card-text p { font-size: 0.95rem; }
+    .produtos h2, #outros-sucos h2 { font-size: 1.5rem; margin: 30px 0; }
+
+    /* Hero */
+    .hero { min-height: 40vh; background-position: center top; }
+    .hero-content p { font-size: 0.95rem; }
+
+    /* Esconder frase do hero no mobile */
+    .hero .hero-frase { display: none !important; }
+
+    /* Garantir header desabilitado mesmo após scroll */
+    body.scrolled #topbar { display: none !important; opacity: 0 !important; pointer-events: none !important; transform: none !important; }
+
+    /* Remover sombra/overlay exagerada do hero no início */
+    .hero::after { display: none !important; }
+
+    /* Contato */
+    .contato form { max-width: 320px; padding: 0 8px; }
+    .contato input, .contato textarea { font-size: 0.95rem; padding: 10px; }
+
+    /* Botões */
+    .btn-mapa, form button, .btn-hero { width: 100%; box-sizing: border-box; padding: 12px 16px; }
+
+    /* Geral */
+    body { font-size: 14px; }
+}
+
