@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image.png"href="icone.parreiras/apple-touch-icon,png">
+  <link rel="apple-touch-icon" href="icone.parreiras/apple-touch-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parreiras do Sul</title>
+  <link rel="icon" type="image/png" href="icone.parreiras/apple-touch-icon.png">
+  
+  
+  <!---------- Google Fonts ------------>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Cormorant+Garamond:wght@300;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Gloock&display=swap" rel="stylesheet"> 
+  
+  
+  <!-- CSS principal + outros CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/produtos.css">
+  <link rel="stylesheet" href="css/contato.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body >
+
+   
+  <!------------ Tarja fixa ------------>
+  <header id="topbar">
+    <!-- Container da logo central -->
+    <div class="topbar-logo-container">
+      <img src="fotos/logos/logo_parreiras_do_sul-02.png" 
+           alt="Logo Vinícola" 
+           class="topbar-logo-img topbar-logo-principal">
+      
+      <!-- Ícone ao lado -->
+      <img src="fotos/logos/logo_Parreiras_do_Sul-05.png" 
+           alt="Ícone Parreiras" 
+           class="topbar-logo-img topbar-logo-icone">
+    </div>
+  </header>
+   
+
+      
+  <!------------ HERO ------------>
+
+  <section class="hero">
+  <div class="hero-content">
+    <p class="hero-frase"></p>
+  </div>
+  
+</section>
+
+<!-- Fundo animado para todo o site abaixo do hero -->
+<div class="fundo-animado"></div>
+
+    
+   <!-- ------------------ PRODUTOS ------------------>
+   <section id="produtos" class="produtos">
+    <h2>Conheça Nossos Vinhos:</h2>
+    <div class="cards-produtos">
+      <div class="card">
+        <div class="card-content">
+          <img src="fotos/produtos/vinho1.jpg" alt="Foto de vinho tinto">
+          <div class="card-text">
+            <h3>Vinho Tinto</h3>
+            <p>Sabor intenso, aroma frutado e corpo encorpado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-content">
+          <img src="fotos/produtos/vinho2.jpg" alt="Foto de vinho tinto">
+          <div class="card-text">
+            <h3>Vinho Branco</h3>
+            <p>Leve e refrescante, perfeito para qualquer ocasião.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Conheça Nosso Suco Parreiras:</h2>
+    <div class="cards-produtos">
+      <div class="card">
+        <div class="card-content">
+          <img src="fotos/produtos/suco1.jpg" alt="Foto de suco de uva">
+          <div class="card-text">
+            <h3>Suco de Uva</h3>
+            <p>Natural, saudável e delicioso, direto da parreira.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- ---------- OUTRA LINHA DE SUCOS ---------->
+    <section id="outros-sucos" class="produtos">
+      <h2>Conheça Nossa Outra Linha de Sucos:</h2>
+      <div class="img-outros-sucos">
+        <img src="fotos/banners/saudavi.jpeg" alt="Linha de sucos Saudávi">
+      </div>
+    </section>
+  
+
+
+
+    <!-- ---------- CONTATO ---------->
+    <section id="contato" class="contato">
+        <h2>Fale Conosco</h2>
+        <form id="whatsappForm">
+            <input type="text" id="nome" placeholder="Ex: João Silva" required>
+            <input type="tel" id="telefone" placeholder="Ex: (11) 99999-9999" required>
+            <textarea id="mensagem" placeholder="Ex: Gostaria de saber mais sobre o Vinho Tinto." required></textarea>
+            <button type="submit">Enviar via WhatsApp</button>
+        </form>
+    </section> 
+
+    <!------------ FOOTER ------------>
+    <footer>
+        &copy; 2025 Vinícola Artesanal. Todos os direitos reservados.
+    </footer>
+
+    <!-- JS -->
+    <script src="js/hero.js" defer></script>
+  <script src="js/contato.js" defer></script>
+  <script src="js/scrolls.js" defer></script>
+</body>
+</html>

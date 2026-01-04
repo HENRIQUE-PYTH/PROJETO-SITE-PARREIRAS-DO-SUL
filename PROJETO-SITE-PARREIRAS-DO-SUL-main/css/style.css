@@ -1,0 +1,101 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriweather', serif; /* nova fonte para o site inteiro */
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+
+
+.fundo-animado {
+  position: fixed; /* fica fixo e cobre todo o conteúdo abaixo */
+  top: 128px; /* ou a altura da linha que separa o hero (ajuste conforme necessário) */
+  left: 0;
+  width: 100%;
+  height: 100%; /* cobre toda a página */
+  background: linear-gradient(-45deg, #000000, #330066, #000000, #330066);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  z-index: -1; /* atrás de todo o conteúdo */
+}
+
+
+
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* ================= GOOGLE MAPS, BOTÕES E FOOTER ================= */
+.btn-mapa, form button, .btn-hero {
+  display: inline-block;
+  padding: 40px 62px;
+  background: linear-gradient(145deg, #800020, #a0002d);
+  color: #fff;
+  font-weight: 600;
+  font-family: 'Cormorant Garamond', serif;
+  text-decoration: none;
+  border-radius: 45px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+  font-size: 1.9rem; /* aumenta o tamanho do texto *//
+  
+}
+
+
+/* ================= TARJA ================= */
+#topbar {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 128px;
+  background-color: #2e003e;
+  background: linear-gradient(90deg, #2e003e, #1a0d1a);
+  transform: translateY(-100%);
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  z-index: 1000;
+  opacity: 0;
+  justify-content: center; /* centraliza o container da logo */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex; justify-content: center; align-items: center; overflow: hidden;
+}
+
+body.scrolled #topbar {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* ================= OUTRA LINHA DE SUCOS ================= */
+#outros-sucos {
+  text-align: center;
+  margin: 80px auto;
+}
+
+#outros-sucos h2 {
+  font-family: 'Lora', serif;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.img-outros-sucos {
+  display: flex;
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center;     /* Centraliza na vertical (se tiver altura definida) */
+  width: 100%;
+}
+
+.img-outros-sucos img {
+  max-width: 90%; /* deixa uma margem lateral */
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+  display: block;
+}
