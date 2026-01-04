@@ -47,9 +47,9 @@
 @media (max-width: 480px) {
    
     .fundo-animado { top: 0 !important; }
-    .topbar-logo-principal { height: auto !important; width: 150px;
+    .topbar-logo-principal { height: auto !important; width: 190px;
     margin-top: 10px ; }
-    .topbar-logo-icone { height: auto; width: 50px;
+    .topbar-logo-icone { height: auto; width: 60px;
     margin-right: -15px; }
 
     /* Produtos */
