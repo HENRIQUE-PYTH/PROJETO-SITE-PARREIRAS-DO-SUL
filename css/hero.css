@@ -32,7 +32,6 @@ section {
 
 /* Efeito de fade/borrão no final da imagem */
 .hero::after {
-<<<<<<< HEAD
   content: "";
   position: absolute;
   bottom: 0;         /* começa no final do hero */
@@ -46,7 +45,6 @@ section {
   );
   z-index: 1;
   pointer-events: none;
-=======
     content: "";
     position: absolute;
     bottom: 0;         /* começa no final do hero */
@@ -60,7 +58,6 @@ section {
     );
     z-index: 1;
     pointer-events: none;
->>>>>>> teste-responsivo
 }
 
 
@@ -183,9 +180,7 @@ animation: slideUpOut 0.8s ease forwards;
 
 
 .hero-ilustracao {
-<<<<<<< HEAD
-  width: 250px;
-=======
+    width: 250px;
     width: 250px;
     opacity: 0;
     transform: translateX(80px);
@@ -284,7 +279,6 @@ animation: slideUpOut 0.8s ease forwards;
 
   .topbar-logo-img,
   .topbar-logo-icone {
->>>>>>> teste-responsivo
   opacity: 0;
   transform: translateX(80px);
   transition: all 1.2s ease-in-out;
@@ -360,20 +354,16 @@ transition: opacity 0.6s ease, transform 0.6s ease;
 
 
 body.scrolled .topbar-logo-principal {
-<<<<<<< HEAD
   height: 110px; /* aumenta ao scroll */
   opacity: 1;
   transform: translateY(10px);
 }
-=======
-    /* height: 110px; aumenta ao scroll */
-    opacity: 1;
-    transform: translateY(10px);
-}
+  
 
 .hero-frase {
     font-size: 2rem;
     margin-top: 500px; /* controla a distância do topo */
   }
   
->>>>>>> teste-responsivo
+
+  
