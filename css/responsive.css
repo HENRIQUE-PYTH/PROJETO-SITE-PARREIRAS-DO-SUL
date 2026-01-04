@@ -1,12 +1,27 @@
 /* ================= MEDIA QUERIES ================= */
 
+
+/*================================================================*/
+
+
+
+/*                      Made By [NEV]²Thi-ii                        */
+
+
+
+
+/*================================================================*/
+
+
+
+
 /* Ajustes gerais para tablet */
 @media (max-width: 768px) {
     /* Topbar / header */
-    #topbar { height: 90px; }
+    #topbar { display: flex; height: 90px; }
     .fundo-animado { top: 90px; }
     .topbar-logo-principal { height: 80px; }
-    .topbar-logo-icone { right: -60px; height: 70px; }
+    .topbar-logo-icone { display: flex; right: -60px; height: 70px; }
 
     /* Produtos */
     .cards-produtos { gap: 20px; padding: 120px 0; }
@@ -30,19 +45,12 @@
 
 /* Ajustes para mobile (pequenas larguras) */
 @media (max-width: 480px) {
-    /* Topbar / header (mobile: totalmente desabilitado) */
-    #topbar {
-        display: none !important;
-        visibility: hidden !important;
-        height: 0 !important;
-        opacity: 0 !important;
-        position: static !important;
-        transform: none !important;
-        pointer-events: none !important;
-    }
+   
     .fundo-animado { top: 0 !important; }
-    .topbar-logo-principal { display: none !important; }
-    .topbar-logo-icone { display: none !important; }
+    .topbar-logo-principal { height: auto !important; width: 150px;
+    margin-top: 10px ; }
+    .topbar-logo-icone { height: auto; width: 50px;
+    margin-right: -15px; }
 
     /* Produtos */
     .cards-produtos { gap: 12px; padding: 60px 0; }
@@ -57,10 +65,13 @@
     .hero-content p { font-size: 0.95rem; }
 
     /* Esconder frase do hero no mobile */
-    .hero .hero-frase { display: none !important; }
+    .hero .hero-frase { font-size: 0.95rem !important;
+    margin-top: 150px;
+    opacity: 0.8;
+    }
 
     /* Garantir header desabilitado mesmo após scroll */
-    body.scrolled #topbar { display: none !important; opacity: 0 !important; pointer-events: none !important; transform: none !important; }
+
 
     /* Remover sombra/overlay exagerada do hero no início */
     .hero::after { display: none !important; }
