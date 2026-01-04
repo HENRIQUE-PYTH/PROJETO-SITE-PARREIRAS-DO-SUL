@@ -1,4 +1,19 @@
 /* ================= HERO ================= */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    background: url("../imagem.hero-frase.hero-nome/porao.vinhos.png") center/cover no-repeat; 
+}
+
+section {
+    background: transparent;
+}
 
 
 /* imagem de fundo atrás do texto, acima da borda */
@@ -10,12 +25,8 @@
     align-items: center;
     text-align: center;
     color: #fff;
-    overflow: clip;
+    overflow: hidden;
     background: url("../fotos/banners/porao.vinhos.jpeg") center/cover no-repeat; 
-}
-
-section {
-    background: transparent;
 }
 
 
@@ -138,10 +149,8 @@ section {
 
 @media (max-width: 480px) {
     /* Hero */
-    .hero {
-        min-height: 70vh;
-        padding-top: 80px; /* espaço pra topbar fixa */
-    }
+    .hero { min-height: 60vh; }
+    .hero-content p { font-size: 0.9rem; }
 
     /* Cards produtos */
     .cards-produtos .card-text h3 { font-size: 1rem; }
@@ -277,7 +286,6 @@ body.scrolled .topbar-logo-principal {
 
 .hero-frase {
     font-size: 2rem;
-    margin-top: 0;
-}
-
+    margin-top: 500px; /* controla a distância do topo */
+  }
   
