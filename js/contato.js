@@ -39,5 +39,3 @@ Mensagem:
 
     whatsappForm.reset();
 });
-
-
