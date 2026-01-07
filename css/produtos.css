@@ -24,7 +24,7 @@
     background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(5px);
     border-radius: 10px;
-    padding: 15px;
+    padding: 70px;
     width: 250px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     transition: transform 0.3s;
@@ -38,13 +38,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 46px;
 }
 
 .cards-produtos .card img {
-    width: 100%;       /* ocupa toda a largura do card */
+    width: 140%;       /* ocupa toda a largura do card */
     height: auto;      /* mantém proporção */
-    border-radius: 10px;
+    border-radius: 12px;
     object-fit: contain;
 }
 
