@@ -42,11 +42,13 @@
 }
 
 .cards-produtos .card img {
-    width: 150px;
-    height: 150px;
+    width: 100%;       /* ocupa toda a largura do card */
+    height: auto;      /* mantém proporção */
     border-radius: 10px;
-    object-fit: cover;
+    object-fit: contain;
 }
+
+
 
 .cards-produtos .card-text h3 { 
     margin: 0 0 30px 0; 

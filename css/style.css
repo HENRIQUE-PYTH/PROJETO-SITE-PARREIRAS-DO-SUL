@@ -93,7 +93,7 @@ body.scrolled #topbar {
 }
 
 .img-outros-sucos img {
-  max-width: 90%; /* deixa uma margem lateral */
+  max-width: 40%; /* deixa uma margem lateral */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.5);
