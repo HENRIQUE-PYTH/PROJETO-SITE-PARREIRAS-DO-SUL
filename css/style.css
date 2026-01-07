@@ -99,3 +99,33 @@ body.scrolled #topbar {
   box-shadow: 0 6px 20px rgba(0,0,0,0.5);
   display: block;
 }
+
+/*-----------FOOTER-----------*/
+.site-footer {
+  background-color: #2e003e;
+  background: linear-gradient(90deg, #2e003e, #1a0d1a);
+  color: #f5e6d3;
+  padding: 20px 450px; /* espaço interno do footer */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* texto na esquerda, logo na direita */
+  align-items: center;             /* centralizado verticalmente */
+  width: 100%;
+}
+
+.footer-text {
+  color: #f5e6d3;
+  margin-top: -10px;
+  margin-right: 20px; 
+}
+
+.footer-logo {
+  width: 60px;
+  height: auto;
+  margin-top: -4px;
+  margin-left: px;
+}
