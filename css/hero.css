@@ -212,6 +212,7 @@ animation: slideUpOut 0.8s ease forwards;
 .topbar-logo-container {
     position: relative; /* necessário para posicionamento absoluto do ícone */
     display: flex;
+    /* width: 200x; */
     justify-content: center;
     align-items: center;
 }
@@ -219,6 +220,7 @@ animation: slideUpOut 0.8s ease forwards;
 .topbar-logo-principal {
     height: 110px;   /* tamanho fixo */
     width: auto;
+    /* width: 500%; */
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
