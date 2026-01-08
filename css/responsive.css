@@ -38,8 +38,8 @@ html, body {
         padding: 0 20px;
     }
     
-    .topbar-logo-principal { height: 60px; width: auto; }
-    .topbar-logo-icone { height: 50px; width: auto; right: -40px; }
+    .topbar-logo-principal { height: 66px !important; width: auto; }
+    .topbar-logo-icone { height: 60px !important; width: auto; right: -40px; margin-top: 0; margin-right: -46px;}
     .fundo-animado { top: 90px; }
 
     /* --- Hero --- */
@@ -88,11 +88,16 @@ html, body {
 /* ================= MOBILE (max-width: 480px) ================= */
 @media (max-width: 480px) {
 
+.hero img{
+height: 10% !important;
+}
+
     /* --- Topbar --- */
     #topbar { padding: 0 10px; }
-    .topbar-logo-principal { height: 50px; margin-top: 5px; }
-    .topbar-logo-icone { height: 40px; right: -20px; }
+    .topbar-logo-principal { height: 64px !important; margin-top: 5px; }
+    .topbar-logo-icone { height: 40px !important; right: -50px; margin-top: 14px; }
     .fundo-animado { top: 0 !important; }
+
 
     /* --- Hero --- */
     .hero { min-height: 60vh; background-position: center; }
