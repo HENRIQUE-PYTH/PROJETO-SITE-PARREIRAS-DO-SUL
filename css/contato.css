@@ -28,8 +28,8 @@
 
 .contato input:focus,
 .contato textarea:focus {
-    border-color: #800020;
-    box-shadow: 0 0 10px #800020;
+    border-color: #2b4933;
+    box-shadow: 0 0 10px #2c523c;
 }
 
 .contato input::placeholder,
@@ -42,4 +42,18 @@
 .contato textarea:focus::placeholder {
     color: #dda0dd;
     opacity: 0.5;
+}
+.contato button {
+    background-color: #4CAF50 !important;
+    color: rgba(255, 255, 255, 0.808);
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 45px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+    font-size: 1rem; /* aumenta o tamanho do texto */
+    font-family: 'Poppins', sans-serif;
 }

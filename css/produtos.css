@@ -9,15 +9,17 @@
     margin: 70px 0 20px 0;
     color: #f5e6d3;
     text-shadow: 13px 3px 7px rgba(0,0,0,0.4);
-    font-family: 'Cinzel', serif; /* fonte premium */
+    font-family: 'Raleway', serif; /* fonte premium */
+    font-weight: 300;
 }
 
 .cards-produtos {
     display: flex;
     justify-content: center;
-    gap: 40px;
-    padding:174px 0;
+    gap: 130px;
+    padding:190px 0;
     flex-wrap: wrap;
+    margin-top: -100px;
 }
 
 .cards-produtos .card {
@@ -25,8 +27,8 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 70px;
-    width: 250px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    width: 260px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
     transition: transform 0.3s;
 }
 
@@ -58,4 +60,7 @@
 .cards-produtos .card-text p { 
     margin: 0; 
     font-size: 1.7rem; 
+}
+#outros-sucos img{
+    width: 50%;
 }
