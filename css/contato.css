@@ -1,59 +1,33 @@
 .contato {
-    padding: 50px 20px;
     text-align: center;
-}
-
-.contato form {
-    display: flex;
-    flex-direction: column;
+    padding: 60px 20px;
+  }
+  
+  .contato p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+  }
+  
+  .btn-whatsapp {
+    display: inline-flex;
     align-items: center;
-    gap: 15px;
-    max-width: 400px;
-    margin: 0 auto;
-    width: 100%;
-}
-
-.contato input,
-.contato textarea {
-    width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: 2px solid rgba(255,255,255,0.3);
-    outline: none;
-    font-size: 1rem;
-    transition: border 0.3s, box-shadow 0.3s;
-    background: rgba(0,0,0,0.3);
-    color: #fff;
-}
-
-.contato input:focus,
-.contato textarea:focus {
-    border-color: #2b4933;
-    box-shadow: 0 0 10px #2c523c;
-}
-
-.contato input::placeholder,
-.contato textarea::placeholder {
-    color: rgba(255,255,255,0.6);
-    font-style: italic;
-}
-
-.contato input:focus::placeholder,
-.contato textarea:focus::placeholder {
-    color: #dda0dd;
-    opacity: 0.5;
-}
-.contato button {
-    background-color: #4CAF50 !important;
-    color: rgba(255, 255, 255, 0.808);
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    text-align: center;
+    gap: 10px;
+    background-color: #25d366;
+    color: #000000;
+    padding: 15px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
     text-decoration: none;
-    border-radius: 45px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-    transition: all 0.4s ease;
-    font-size: 1rem; /* aumenta o tamanho do texto */
-    font-family: 'Poppins', sans-serif;
-}
+    transition: transform 0.2s, background 0.2s;
+  }
+  
+  .btn-whatsapp:hover {
+    background-color: #1ebe5d;
+    transform: scale(1.05);
+  }
+  
+  .btn-whatsapp img {
+    width: 24px;
+  }
+  
