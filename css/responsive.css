@@ -95,22 +95,24 @@ height: 10% !important;
     /* --- Topbar --- */
     #topbar { padding: 0 10px; }
     .topbar-logo-principal { height: 64px !important; margin-top: 5px; }
-    .topbar-logo-icone { height: 40px !important; right: -50px; margin-top: 14px; }
+    .topbar-logo-icone { height: 40px !important; right: -50px; margin-top: 14px;}
     .fundo-animado { top: 0 !important; }
 
+    
 
     /* --- Hero --- */
     .hero { min-height: 60vh; background-position: center; }
     .hero-title { flex-direction: column; }
     .hero-title h1 { font-size: 1.8rem; text-align: center; }
     .hero-logo { width: 50px; height: auto; margin: 10px auto 0; display: block; }
+
     
     /* --- Produtos (Um embaixo do outro) --- */
     .cards-produtos {
         flex-direction: column;
         align-items: center;
         gap: 40px;
-        padding: 20px 0;
+        padding: 74px 0;
     }
 
     .cards-produtos .card {
