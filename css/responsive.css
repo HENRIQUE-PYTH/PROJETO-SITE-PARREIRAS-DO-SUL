@@ -59,6 +59,7 @@ html, body {
         width: 45%; /* Dois cards por linha no tablet */
         padding: 30px; /* Reduz padding interno gigante do card */
         max-width: 350px;
+        margin-top: 40px;
     }
     
     .cards-produtos .card img { 
