@@ -46,7 +46,12 @@ html, body {
     
 
     /* --- Hero --- */
-    .hero { min-height: 50vh; }
+    .hero {
+        min-height: 100svh; 
+        background-image: url("../fotos/banners/fundo-mobile.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
     .hero-title h1 { font-size: 2.5rem; } /* Ajuste de tamanho do título */
 
     
@@ -109,7 +114,7 @@ height: 10% !important;
     
 
     /* --- Hero --- */
-    .hero { min-height: 60vh; background-position: center; }
+    .hero { min-height: 100vh; background-position: center; }
     .hero-title { flex-direction: column; }
     .hero-title h1 { font-size: 1.8rem; text-align: center; }
     .hero-logo { width: 50px; height: auto; margin: 10px auto 0; display: block; }
