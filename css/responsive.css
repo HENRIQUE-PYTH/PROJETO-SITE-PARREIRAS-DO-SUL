@@ -37,14 +37,19 @@ html, body {
         height: 90px; 
         padding: 0 20px;
     }
+
     
     .topbar-logo-principal { height: 66px !important; width: auto; }
     .topbar-logo-icone { height: 60px !important; width: auto; right: -40px; margin-top: 0; margin-right: -46px;}
     .fundo-animado { top: 90px; }
 
+    
+
     /* --- Hero --- */
     .hero { min-height: 50vh; }
     .hero-title h1 { font-size: 2.5rem; } /* Ajuste de tamanho do título */
+
+    
 
     /* --- Produtos --- */
     .produtos { padding: 40px 15px; } /* Reduz padding lateral excessivo */
@@ -85,6 +90,8 @@ html, body {
     .footer-text { margin: 0; }
     .footer-logo { margin: 0; }
 }
+
+
 
 /* ================= MOBILE (max-width: 480px) ================= */
 @media (max-width: 480px) {
