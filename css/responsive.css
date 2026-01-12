@@ -101,9 +101,16 @@ html, body {
 /* ================= MOBILE (max-width: 480px) ================= */
 @media (max-width: 480px) {
 
-.hero img{
+/* .hero img{
 height: 10% !important;
-}
+} */
+
+    .hero {
+        min-height: 100svh;
+        background-image: url("../fotos/banners/fundo-mobile.jpeg");
+        background-size: cover;
+        background-position: center;
+    }
 
     /* --- Topbar --- */
     #topbar { padding: 0 10px; }
