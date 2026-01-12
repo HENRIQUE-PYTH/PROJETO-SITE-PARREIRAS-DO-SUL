@@ -101,9 +101,6 @@ html, body {
 /* ================= MOBILE (max-width: 480px) ================= */
 @media (max-width: 480px) {
 
-/* .hero img{
-height: 10% !important;
-} */
 
     .hero {
         min-height: 100svh;

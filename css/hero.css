@@ -1,20 +1,5 @@
 /* ================= HERO ================= */
 
-/* .hero {
-  position: relative;
-  min-height: 100vh; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  overflow: hidden;
-  background: url("../imagem.hero-frase.hero-nome/porao.vinhos.png") center/cover no-repeat; 
-}   */
-
-
-
-
 /* imagem de fundo atrás do texto, acima da borda */
 .hero {
   position: relative;

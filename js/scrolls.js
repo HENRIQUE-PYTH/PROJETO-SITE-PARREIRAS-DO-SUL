@@ -12,6 +12,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
 // =======================
 // Scroll listener para animação do topbar
 // =======================
+
 // pega os elementos logo no início
 const topbarLogo = document.querySelector('.topbar-logo-img'); // logo principal
 const topbarIcone = document.querySelector('.topbar-logo-icone'); // ícone da tarja
@@ -52,7 +53,6 @@ function esconderLogos() {
     topbarIcone.addEventListener('animationend', () => topbarIcone.style.display = 'none', { once: true });
 }
 
-// Scroll listener
 // Scroll listener
 window.addEventListener('scroll', () => {
     if(window.scrollY > 50){
