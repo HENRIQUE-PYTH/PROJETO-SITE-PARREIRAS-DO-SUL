@@ -48,7 +48,7 @@ html, body {
     /* --- Hero --- */
     .hero {
         min-height: 100svh; 
-        background-image: url("../fotos/banners/fundo-mobile.jpeg");
+        background-image: url("../fotos/banners/fundo-mobile-teste.jpeg");
         background-size: cover;
         background-position: center;
     }
@@ -104,7 +104,7 @@ html, body {
 
     .hero {
         min-height: 100svh;
-        background-image: url("../fotos/banners/fundo-mobile.jpeg");
+        background-image: url("../fotos/banners/fundo-mobile-teste.jpeg");
         background-size: cover;
         background-position: center;
     }
