@@ -15,7 +15,7 @@ O objetivo é fornecer uma presença online clara e profissional para a empresa.
 ## 📂 Estrutura do projeto
 - `/css` → estilos do site
 - `/js` → scripts JavaScript
-- `/img` ou `/fotos` → imagens utilizadas
+- `fotos` e suas subpastas → imagens utilizadas
 - `index.html` → página principal
 
 ## 🌐 Status do projeto
