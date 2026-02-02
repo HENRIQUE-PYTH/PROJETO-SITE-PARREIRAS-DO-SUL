@@ -53,12 +53,15 @@ html, body {
         background-position: center;
     }
     .hero-title h1 { font-size: 2.5rem; } /* Ajuste de tamanho do título */
+     .hero .hero-frase {
+    font-size: 2.3rem;
+  }
 
     
 
     /* --- Produtos --- */
     .produtos { padding: 40px 15px; } /* Reduz padding lateral excessivo */
-    .produtos h2 { font-size: 2.2rem; margin: 30px 0; }
+    .produtos h2 { font-size: 3rem; margin: 30px 0; }
 
     .cards-produtos { 
         padding: 40px 0; 
@@ -122,6 +125,8 @@ html, body {
     .hero-title { flex-direction: column; }
     .hero-title h1 { font-size: 1.8rem; text-align: center; }
     .hero-logo { width: 50px; height: auto; margin: 10px auto 0; display: block; }
+    .hero .hero-frase {font-size: 1.7rem;}
+    .produtos h2 { font-size: 2.4rem; margin: 30px 0; }
 
     
     /* --- Produtos (Um embaixo do outro) --- */
