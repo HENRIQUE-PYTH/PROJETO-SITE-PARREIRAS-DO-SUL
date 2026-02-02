@@ -21,10 +21,8 @@ function escreverTexto(elemento, texto, delay = 100, callback = null) {
 // Mostra no hero (nova versão com animação de baixo para cima)
 function mostrarHero() {
   heroFrase.textContent = textoFrase;
-
   // adiciona classes de animação de entrada
   heroFrase.classList.add('slide-up');
-  heroFrase.style.fontSize = "2rem";
 
 }
 
