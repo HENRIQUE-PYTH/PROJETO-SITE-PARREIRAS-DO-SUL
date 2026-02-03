@@ -75,10 +75,12 @@ html, body {
         margin-top: 40px;
     }
     
-    .cards-produtos .card img { 
-        width: 100%; /* Corrige o width 140% que estourava */
-        height: auto; 
-    }
+    .cards-produtos .card img {
+    width: 100%;
+    height: 725px;      /* ajuste fino se quiser */
+    object-fit: cover; /* mantém padrão visual */
+    border-radius: 8px;
+}
 
     #outros-sucos {
     padding-left: 0;
@@ -90,8 +92,8 @@ html, body {
   }
 
   #outros-sucos .img-outros-sucos img {
-    width: 100%;
-    max-width: 100%;
+    width: 80%;
+    max-width: 80%;
     height: auto;
   }
 
@@ -177,10 +179,11 @@ html, body {
     }
 
     .cards-produtos .card img {
-        width: 80%; /* Imagem um pouco menor para caber bem */
-        margin: 0 auto;
-        display: block;
-    }
+    width: 100%;
+    height: 725px;      /* ajuste fino se quiser */
+    object-fit: cover; /* mantém padrão visual */
+    border-radius: 8px;
+}
 
     .cards-produtos .card-text h3 { font-size: 1.4rem; margin-top: 15px; margin-bottom: 10px; }
     .cards-produtos .card-text p { font-size: 0.95rem; }
@@ -200,202 +203,4 @@ html, body {
     .footer-text { font-size: 0.8rem; line-height: 1.4; margin-right: 0; }
 }
 
-  /* ================= MEDIA QUERIES =================
-
-/* ================= RESET GLOBAL DE SEGURANÇA ================= */
-/* Isso impede que bordas e paddings aumentem o tamanho dos elementos e quebrem a tela */
-* {
-    box-sizing: border-box;
-}
-
-html, body {
-    overflow-x: hidden; /* Remove rolagem lateral indesejada */
-    width: 100%;
-}
-
-/* ================= TABLET (max-width: 768px) ================= */
-@media (max-width: 768px) {
-
-    /* --- Topbar / Header --- */
-    #topbar { 
-        height: 90px; 
-        padding: 0 20px;
-    }
-
-    
-    .topbar-logo-principal { height: 66px !important; width: auto; }
-    .topbar-logo-icone { height: 60px !important; width: auto; right: -40px; margin-top: 0; margin-right: -46px;}
-    .fundo-animado { top: 90px; }
-
-    
-
-    /* --- Hero --- */
-    .hero {
-        min-height: 100svh; 
-        background-image: url("../fotos/banners/fundo-mobile-teste.jpeg");
-        background-size: cover;
-        background-position: center;
-    }
-    .hero-title h1 { font-size: 2.5rem; } /* Ajuste de tamanho do título */
-     .hero .hero-frase {
-    font-size: 2.3rem;
-  }
-
-    
-
-    /* --- Produtos --- */
-    .produtos { padding: 40px 15px; } /* Reduz padding lateral excessivo */
-    .produtos h2 { font-size: 3rem; margin: 30px 0; }
-
-    .cards-produtos { 
-        padding: 40px 0; 
-        gap: 30px; 
-    }
-    
-    .cards-produtos .card { 
-        width: 45%; /* Dois cards por linha no tablet */
-        padding: 30px; /* Reduz padding interno gigante do card */
-        max-width: 350px;
-        margin-top: 40px;
-    }
-    
-    .cards-produtos .card img {
-    width: 100%;
-    height: 725px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-    /* EXCEÇÃO: card wide (imagem horizontal) */
-    .cards-produtos .card.card-wide img {
-    height: auto;
-    max-height: none;
-    object-fit: contain;
-    }
-
-    #outros-sucos {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #outros-sucos .img-outros-sucos {
-    width: 100%;
-  }
-
-  #outros-sucos .img-outros-sucos img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-    .cards-produtos .card-text h3 { font-size: 1.5rem; margin-bottom: 10px; }
-    .cards-produtos .card-text p { font-size: 1rem; }
-
-    /* --- Footer (Correção do padding 450px) --- */
-    .site-footer {
-        padding: 30px 20px; /* Remove o padding de 450px */
-        width: 100%;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-    
-    .footer-text { margin: 0; }
-    .footer-logo { margin: 0; }
-}
-
-
-
-/* ================= MOBILE (max-width: 480px) ================= */
-@media (max-width: 480px) {
-
-
-    .hero {
-        min-height: 100svh;
-        background-image: url("../fotos/banners/fundo-mobile-teste.jpeg");
-        background-size: cover;
-        background-position: center;
-    }
-
-    /* --- Topbar --- */
-    #topbar { padding: 0 10px; }
-    .topbar-logo-principal { height: 64px !important; margin-top: 5px; }
-    .topbar-logo-icone { height: 40px !important; right: -10px; margin-top: 5px;}
-    .fundo-animado { top: 0 !important; }
-
-    
-
-    /* --- Hero --- */
-    .hero { min-height: 100svh; background-position: center; }
-    .hero-title { flex-direction: column; }
-    .hero-title h1 { font-size: 1.8rem; text-align: center; }
-    .hero-logo { width: 50px; height: auto; margin: 10px auto 0; display: block; }
-    .hero .hero-frase {font-size: 1.7rem;}
-    .produtos h2 { font-size: 2.4rem; margin: 30px 0; }
-    #outros-sucos .img-outros-sucos img{
-        width: 105%;
-    }
-    
-     #outros-sucos {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  #outros-sucos .img-outros-sucos {
-    width: 100%;
-  }
-
-  #outros-sucos .img-outros-sucos img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-  }
-
-    
-    /* --- Produtos (Um embaixo do outro) --- */
-    .cards-produtos {
-        flex-direction: column;
-        align-items: center;
-        gap: 40px;
-        padding: 74px 0;
-    }
-
-    .cards-produtos .card {
-        width: 90%;
-        max-width: 100%;
-        padding: 15px; /* Padding interno confortável */
-    }
-
-    .cards-produtos .card img {
-    width: 100%;
-    height: 725px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-    .cards-produtos .card.card-wide img {
-        width: 100%;
-        max-height: 300px; /* controla altura no celular */
-        object-fit: contain;
-    }
-
-    .cards-produtos .card-text h3 { font-size: 1.4rem; margin-top: 15px; margin-bottom: 10px; }
-    .cards-produtos .card-text p { font-size: 0.95rem; }
-
-    /* --- Footer --- */
-    .site-footer {
-        padding: 30px 15px; /* Garante que cabe na tela */
-        text-align: center;
-    }
-
-    .footer-content {
-        flex-direction: column-reverse; /* Logo em cima, texto embaixo (opcional) */
-        gap: 15px;
-    }
-    
-    .footer-logo { width: 80px; }
-    .footer-text { font-size: 0.8rem; line-height: 1.4; margin-right: 0; }
-} 
+  
