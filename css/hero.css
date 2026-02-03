@@ -22,8 +22,8 @@ section {
 }
 
 img {
-  width: 100% !important;    /* Ou um valor fixo, como 400px */
-  height: auto;  /* Altura definida */
+  width: 100%;    /* Ou um valor fixo, como 400px */
+  height: 300px;  /* Altura definida */
   object-fit: contain; 
 }
 

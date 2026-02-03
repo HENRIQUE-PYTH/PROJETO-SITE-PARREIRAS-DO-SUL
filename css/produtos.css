@@ -45,7 +45,7 @@
 
 .cards-produtos .card img {
     width: 100%;
-    height: 725px;      /* ajuste fino se quiser */
+    height: 750px;      /* ajuste fino se quiser */
     object-fit: cover; /* mantém padrão visual */
     border-radius: 8px;
 }
@@ -63,7 +63,7 @@
 }
 
 #outros-sucos .img-outros-sucos img {
-    width: 42%;
+    width: 40%;
     display: block;
     margin: 0 auto;
 }
