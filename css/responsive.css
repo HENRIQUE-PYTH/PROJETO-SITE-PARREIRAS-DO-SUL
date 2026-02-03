@@ -200,25 +200,7 @@ html, body {
     .footer-text { font-size: 0.8rem; line-height: 1.4; margin-right: 0; }
 }
 
-  /* ================= MEDIA QUERIES ================= */
-
-
-/*================================================================*/
-
-
-
-/*                      Made By [NEV]²Thi-ii                        */
-
-
-
-
-/*================================================================*/
-
-
-
-
-
-
+  /* ================= MEDIA QUERIES =================
 
 /* ================= RESET GLOBAL DE SEGURANÇA ================= */
 /* Isso impede que bordas e paddings aumentem o tamanho dos elementos e quebrem a tela */
@@ -416,6 +398,4 @@ html, body {
     
     .footer-logo { width: 80px; }
     .footer-text { font-size: 0.8rem; line-height: 1.4; margin-right: 0; }
-}
-
-  
+} 
