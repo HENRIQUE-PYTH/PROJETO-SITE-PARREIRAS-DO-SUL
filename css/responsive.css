@@ -80,9 +80,20 @@ html, body {
         height: auto; 
     }
 
-    #outros-sucos .img-outros-sucos img{
-        width: 70%;
-    }
+    #outros-sucos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #outros-sucos .img-outros-sucos {
+    width: 100%;
+  }
+
+  #outros-sucos .img-outros-sucos img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 
     .cards-produtos .card-text h3 { font-size: 1.5rem; margin-bottom: 10px; }
     .cards-produtos .card-text p { font-size: 1rem; }
@@ -134,6 +145,21 @@ html, body {
     #outros-sucos .img-outros-sucos img{
         width: 105%;
     }
+    
+     #outros-sucos {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #outros-sucos .img-outros-sucos {
+    width: 100%;
+  }
+
+  #outros-sucos .img-outros-sucos img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
 
     
     /* --- Produtos (Um embaixo do outro) --- */
