@@ -21,6 +21,12 @@ section {
   background: transparent;
 }
 
+img {
+  width: 100%;    /* Ou um valor fixo, como 400px */
+  height: 300px;  /* Altura definida */
+  object-fit: contain; 
+}
+
 
 /* Efeito de fade/borrão no final da imagem */
 .hero::after {
