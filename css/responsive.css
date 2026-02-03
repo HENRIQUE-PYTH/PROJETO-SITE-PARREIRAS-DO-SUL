@@ -80,6 +80,10 @@ html, body {
         height: auto; 
     }
 
+    #outros-sucos .img-outros-sucos img{
+        width: 70%;
+    }
+
     .cards-produtos .card-text h3 { font-size: 1.5rem; margin-bottom: 10px; }
     .cards-produtos .card-text p { font-size: 1rem; }
 
@@ -127,6 +131,9 @@ html, body {
     .hero-logo { width: 50px; height: auto; margin: 10px auto 0; display: block; }
     .hero .hero-frase {font-size: 1.7rem;}
     .produtos h2 { font-size: 2.4rem; margin: 30px 0; }
+    #outros-sucos .img-outros-sucos img{
+        width: 90%;
+    }
 
     
     /* --- Produtos (Um embaixo do outro) --- */

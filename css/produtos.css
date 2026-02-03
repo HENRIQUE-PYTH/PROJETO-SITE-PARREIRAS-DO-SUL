@@ -61,6 +61,6 @@
     margin: 0; 
     font-size: 1.7rem; 
 }
-#outros-sucos img{
-    width: 50%;
+#outros-sucos .img-outros-sucos img{
+    width: 42%;
 }
