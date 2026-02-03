@@ -173,14 +173,14 @@ html, body {
     }
 
     .cards-produtos .card {
-        width: 100%;
+        width: 80%;
         max-width: 100%;
         padding: 25px; /* Padding interno confortável */
     }
 
     .cards-produtos .card img {
     width: 100%;
-    height: 800px;      /* ajuste fino se quiser */
+    height: 500px;      /* ajuste fino se quiser */
     object-fit: cover; /* mantém padrão visual */
     border-radius: 8px;
 }
