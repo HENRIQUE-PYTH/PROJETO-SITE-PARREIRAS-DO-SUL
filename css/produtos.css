@@ -27,7 +27,7 @@
     backdrop-filter: blur(5px);
     border-radius: 10px;
     padding: 70px;
-    width: 260px;
+    width: 500px;
     box-shadow: 10px 10px 20px rgba(0,0,0,0.3);
     transition: transform 0.3s;
 }
@@ -47,6 +47,7 @@
     width: 100%;
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 
 
