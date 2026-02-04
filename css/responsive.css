@@ -178,23 +178,13 @@ html, body {
         padding: 25px; /* Padding interno confortável */
     }
 
+    
     .cards-produtos .card img {
-    width: 115%;
-    max-height: 520px;
-    object-fit: contain;
-
-    /* FUNDO PADRÃO */
-    background: #ffffff;
-
-    /* ESPAÇO PRA “RESPIRAR” */
-    padding: 18px;
-
-    /* BORDAS BONITAS */
-    border-radius: 14px;
-
-    /* garante que padding não estoure */
-    box-sizing: border-box;
-  }
+        width: 80%;
+        height: auto;
+        object-fit: contain;
+        border-radius: 9px; /* não precisa mais aqui */
+    }
 
     .cards-produtos .card-text h3 { font-size: 1.4rem; margin-top: 15px; margin-bottom: 10px; }
     .cards-produtos .card-text p { font-size: 0.95rem; }
